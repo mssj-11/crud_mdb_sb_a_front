@@ -1,4 +1,4 @@
-#	FRONT CONSUMIN API
+#	FRONT TO CONSUME API
 
 ##	Creación de la App
 ```sh
