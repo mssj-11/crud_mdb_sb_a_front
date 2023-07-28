@@ -1,15 +1,18 @@
-#	FRONT TO CONSUME
+#	FRONT TO CONSUME WITH ANGULAR
 
-##  Technologies:
-*   ##  Spring 
-*   ##  Angular 16.1.4
+##  Versions:
+*   ###  [Angular 16.1.4](https://angular.io/)
+*   ###  [Bootstrap 5.3.1](https://getbootstrap.com/)
+*   ###  [Font Awesome 6.4.0](https://fontawesome.com/)
+*   ###  [sweetalert2](https://sweetalert2.github.io/#frameworks-integrations)
+*   ###  [ngx-toastr](https://github.com/scttcper/ngx-toastr)
 
 
 
 
 
 
-##  ****************************************************
+##  ***************************************************************************************
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
