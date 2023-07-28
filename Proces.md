@@ -16,6 +16,38 @@ npm i ngx-toastr
 ```
 
 
+##  Component creation:
+
+### Component "List"
+```sh
+ng g c product/list --skip-tests --flat
+```
+
+### Component "Detail"
+```sh
+ng g c product/detail --skip-tests --flat
+```
+
+### Component "Create"
+```sh
+ng g c product/create --skip-tests --flat
+```
+
+### Component "Update"
+```sh
+ng g c product/update --skip-tests --flat
+```
+
+## Service creation:
+```sh
+ng g s services/product --skip-tests
+```
+
+## Class creation:
+```sh
+ng g class model/product --skip-tests
+```
+
 
 
 ##  Correr
