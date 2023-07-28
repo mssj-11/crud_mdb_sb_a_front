@@ -13,6 +13,7 @@ import { ListComponent } from './product/list.component';
 import { DetailComponent } from './product/detail.component';
 import { CreateComponent } from './product/create.component';
 import { UpdateComponent } from './product/update.component';
+import { MenuComponent } from './menu/menu.component';
 
 //  External: Validations with sweetalert2 & Animations with ngx-toastr
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
@@ -26,7 +27,8 @@ import { ToastrModule } from 'ngx-toastr';
     ListComponent,
     DetailComponent,
     CreateComponent,
-    UpdateComponent
+    UpdateComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

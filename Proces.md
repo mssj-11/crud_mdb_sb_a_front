@@ -18,6 +18,11 @@ npm i ngx-toastr
 
 ##  Component creation:
 
+### Component "Menu"
+```sh
+ng g c menu/menu --skip-tests --flat
+```
+
 ### Component "List"
 ```sh
 ng g c product/list --skip-tests --flat
