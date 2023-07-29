@@ -1,1 +1,35 @@
-<p>list works!</p>
+<app-menu></app-menu>
+
+<div class="container">
+<br/>
+          <div class="col-md-12">
+              <!--Tabla-->
+              <a routerLink="/create" class="btn text-white mb-3 bg-success"><i class="fa-solid fa-square-plus"></i> Add new product</a>
+              <h2 class="card-title p-3 bg-danger text-center text-white fw-bold">PRODUCTS</h2>
+              <div class="table-responsive text-center">
+                <table class="table table-striped">
+                  <thead class="text-white" style="background-color: red;">
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a routerLink="/detail" class="btn btn-primary text-white me-2"><i class="fa-solid fa-circle-info"></i></a>
+                        <a routerLink="/update" class="btn btn-warning text-white me-2"><i class="fa-solid fa-file-pen"></i></a>
+                        <a routerLink="/delete" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+              <!--Tabla end-->
+</div>
