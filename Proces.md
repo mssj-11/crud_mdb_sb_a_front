@@ -53,6 +53,11 @@ ng g s services/product --skip-tests
 ng g class model/product --skip-tests
 ```
 
+## Add environments:
+```sh
+ng generate environments
+```
+
 
 
 ##  Correr
