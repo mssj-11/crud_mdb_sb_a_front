@@ -1,5 +1,5 @@
 export class Product {
-    id: number; //In case of error change to: id!: number;
+    id!: number; //In case of error change to: id!: number;
     name: string;
     price: number;
 
