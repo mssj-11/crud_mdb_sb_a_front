@@ -34,6 +34,7 @@ export class DetailComponent implements OnInit{
         },
         error: err => {
           this.toast.error(err.error.message, 'Error', { timeOut: 3000, positionClass: 'toast-top-center' });
+          this.router.navigate(['']);
         }
       }
     );
