@@ -1,7 +1,7 @@
 <app-menu></app-menu>
 
 <br/>
-    <div class="container">
+    <div class="container" *ngIf="product">
         <div class="row">
         <div class="col-md-3"></div>
 
@@ -10,13 +10,13 @@
 
             <div class="card-body">
                 <ul class="list-group list-group-flush mb-4">
-                    <li class="list-group-item"><b>ID:</b> </li>
-                    <li class="list-group-item"><b>Name:</b> </li>
-                    <li class="list-group-item"><b>Price:</b> </li>
+                    <li class="list-group-item"><b>ID:</b> {{product.id}}</li>
+                    <li class="list-group-item"><b>Name:</b> {{product.name}}</li>
+                    <li class="list-group-item"><b>Price:</b> {{product.price}}</li>
                 </ul>
                 
                 <div class="mb-1 mt-2">
-                    <a routerLink="/" class="btn btn-dark form-control">Back</a>
+                    <a routerLink="/" class="btn btn-dark form-control"><i class="fa-solid fa-circle-left"></i> Back</a>
                 </div>
             </div>
         </div>

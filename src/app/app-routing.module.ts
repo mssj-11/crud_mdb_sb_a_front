@@ -1,15 +1,13 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
 import { ListComponent } from './product/list.component';
 import { DetailComponent } from './product/detail.component';
 import { CreateComponent } from './product/create.component';
 import { UpdateComponent } from './product/update.component';
-import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   {path: '', component: ListComponent},
-  {path: 'menu', component: MenuComponent},
-  {path: 'detail', component: DetailComponent},
+  {path: 'detail/:id', component: DetailComponent},
   {path: 'create', component: CreateComponent},
   {path: 'update', component: UpdateComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'}
