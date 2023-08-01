@@ -69,3 +69,46 @@ ng generate environments
 ```
 ng serve -o
 ```
+
+
+
+#   Error Solutions:
+##  Subscribe deprecated
+```js
+  getProducts(): void {
+    this.productService.list().subscribe(
+      data => {
+        this.products = data;
+        console.log(this.products);
+      },
+      err => {
+        this.toast.error(err.error.message, 'Error', { timeOut: 3000, positionClass: 'toast-top-center' });
+      }
+    );
+  }
+```
+### Replace by
+```js
+  getProducts(): void {
+    this.productService.list().subscribe(
+    {
+      next: data => {
+        this.products = data;
+        console.log(this.products);
+      },
+      error: err => {
+        this.toast.error(err.error.message, 'Error', { timeOut: 3000, positionClass: 'toast-top-center' });
+      }
+    }
+    );
+  }
+```
+
+##  ERROR Access to XMLHttpRequest
+```sh
+Access to XMLHttpRequest at 'http://localhost:8080/product' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+```
+### Solution (Install cors)
+```sh
+npm install cors
+```
