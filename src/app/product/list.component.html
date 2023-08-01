@@ -16,12 +16,12 @@
                       <th scope="col">Actions</th>
                     </tr>
                   </thead>
+                  
                   <tbody>
-
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                    <tr *ngFor="let product of products">
+                      <td>{{product.id}}</td>
+                      <td>{{product.name}}</td>
+                      <td>{{product.price}}</td>
                       <td>
                         <a routerLink="/detail" class="btn btn-primary text-white me-2"><i class="fa-solid fa-circle-info"></i></a>
                         <a routerLink="/update" class="btn btn-warning text-white me-2"><i class="fa-solid fa-file-pen"></i></a>
