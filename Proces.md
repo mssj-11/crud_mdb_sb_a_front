@@ -58,9 +58,10 @@ ng g class model/product --skip-tests
 ```sh
 ng generate environments
 ```
-## Config environments
-```sh
 
+## Service storage:
+```sh
+ng g s services/storage --skip-tests
 ```
 
 
