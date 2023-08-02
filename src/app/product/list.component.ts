@@ -2,6 +2,7 @@ import { ProductService } from './../services/product.service';
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Product } from '../model/product';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -46,5 +47,30 @@ export class ListComponent implements OnInit{
     }
     );
   }
+
+
+
+  onDelete(id: number): void{
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'You cannot undo',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'OK',
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.value){
+        console.log('Deleted product ' + id);
+      } else if (result.dismiss === Swal.DismissReason.cancel){
+        Swal.fire(
+          'Canceled',
+          'Product not deleted',
+          'error'
+        );
+      }
+    });
+  }
+
+
 
 }
