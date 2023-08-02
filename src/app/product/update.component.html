@@ -6,21 +6,21 @@
     <div class="col-md-6 center card shadow p-3 bg-body rounded">
       <br><h2 class="title p-3 text-white text-center fw-bold bg-primary">UPDATE PRODUCT</h2><br>
       
-      <form method="POST" class="form">
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="form">
 
         <div class="mb-2 form-group">
                 <label for="name" class="form-label">Name:</label>
-                <input type="text" name="name" class="form-control" required>
+                <input type="text" name="name" class="form-control" required [(ngModel)]="product.name">
         </div>
         <div class="mb-2 form-group">
                 <label for="price" class="form-label">Price:</label>
-                <input type="text" name="price" class="form-control" required>
+                <input type="number" name="price" class="form-control" required [(ngModel)]="product.price">
         </div>
         <div class="col-md-6 help-text"></div>
 
         <br/>
         <div class="mb-4 mt-2">
-          <button type="submit" class="btn text-white me-3 bg-primary"><i class="fa-solid fa-floppy-disk"></i> Update</button>
+          <button [disabled]="!f.valid" class="btn text-white me-3 bg-primary"><i class="fa-solid fa-floppy-disk"></i> Update</button>
           <a routerLink="/" class="btn btn-dark"><i class="fa-solid fa-circle-left"></i> Back</a>
         </div>
       </form>

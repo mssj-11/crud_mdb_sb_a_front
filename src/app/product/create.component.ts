@@ -17,7 +17,7 @@ export class CreateComponent implements OnInit{
   constructor(
     private productService: ProductService,
     private toast: ToastrService,
-    private router: Router,
+    private router: Router
   ){}
 
   ngOnInit(): void {
