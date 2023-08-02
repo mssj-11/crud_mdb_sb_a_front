@@ -24,7 +24,7 @@
                       <td>$ {{product.price}} USD</td>
                       <td>
                         <a routerLink="/detail/{{product.id}}" class="btn btn-primary text-white me-2"><i class="fa-solid fa-circle-info"></i></a>
-                        <a routerLink="/update/{{product.id}}" class="btn btn-warning text-white me-2"><i class="fa-solid fa-file-pen"></i></a>
+                        <a routerLink="/update/{{product.id}}/{{product.name}}/{{product.price}}" class="btn btn-warning text-white me-2"><i class="fa-solid fa-file-pen"></i></a>
                         <a (click)="onDelete(product.id)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                       </td>
                     </tr>
