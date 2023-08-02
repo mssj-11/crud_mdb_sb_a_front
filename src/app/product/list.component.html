@@ -21,7 +21,7 @@
                     <tr *ngFor="let product of products">
                       <td>{{product.id}}</td>
                       <td>{{product.name}}</td>
-                      <td>{{product.price}}</td>
+                      <td>$ {{product.price}} USD</td>
                       <td>
                         <a routerLink="/detail/{{product.id}}" class="btn btn-primary text-white me-2"><i class="fa-solid fa-circle-info"></i></a>
                         <a routerLink="/update/{{product.id}}" class="btn btn-warning text-white me-2"><i class="fa-solid fa-file-pen"></i></a>

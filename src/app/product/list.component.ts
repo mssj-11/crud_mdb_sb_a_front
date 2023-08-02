@@ -60,6 +60,17 @@ export class ListComponent implements OnInit{
       cancelButtonText: 'Cancel'
     }).then((result) => {
       if (result.value){
+        this.productService.delete(id).subscribe(
+          {
+            next: data => {
+              this.toast.success(data.message, 'OK', { timeOut: 3000, positionClass: 'toast-top-center' });
+              this.getProducts();
+            },
+            error: err => {
+              this.toast.error(err.error.message, 'Error', { timeOut: 3000, positionClass: 'toast-top-center' });
+            }
+          }
+        );
         console.log('Deleted product ' + id);
       } else if (result.dismiss === Swal.DismissReason.cancel){
         Swal.fire(
