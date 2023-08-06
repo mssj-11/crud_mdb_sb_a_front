@@ -9,6 +9,25 @@
 
 
 
+#   Views
+##   Lista
+<p align="center"><img src="/README/1.png"/></p>
+
+##   Add Product
+###	Validations
+<p align="center"><img src="/README/2.png"/></p>
+<p align="center"><img src="/README/3.png"/></p>
+
+##   Detail
+<p align="center"><img src="/README/4.png"/></p>
+
+##   Update
+<p align="center"><img src="/README/5.png"/></p>
+
+##   Delete
+###	Validations
+<p align="center"><img src="/README/6.png"/></p>
+<p align="center"><img src="/README/7.png"/></p>
 
 
 
