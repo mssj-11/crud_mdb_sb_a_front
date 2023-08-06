@@ -64,6 +64,11 @@ ng generate environments
 ng g s services/storage --skip-tests
 ```
 
+## Service subject (no necesary):
+```sh
+ng g s services/subject --skip-tests
+```
+
 
 
 ##  Correr
